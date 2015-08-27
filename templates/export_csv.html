@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>导出账单</title>
+    <link href="/static/export/css/button.css" type="text/css" rel="stylesheet">
+    <link href="/static/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div style="background:url(/static/export/img/yjz.jpg) no-repeat center center;
+    width: 150px; height: 150px; background-size: contain; width:100%; text-align:center">
+
+    </div>
+    {% if error %}
+        <p style="color: red; text-align:center"><i class="fa fa-exclamation-triangle"></i>请输入正确的密码</p>
+    {% endif %}
+    <form action="" method="get">
+        <div style="width:100%; text-align:center">
+        <!--<input type="text" name="id_user">-->
+        <input type="password" placeholder="请输入您的密码" name="pwd_user">
+            <!--</div>-->
+        <!--<div style="width:100%; text-align:center">-->
+
+
+        <button class="blue button" type="submit">
+        <i class='icon-download-alt'></i>导出账单
+        </button>
+
+
+
+
+            </div>
+
+    </form>
+</body>
+</html>
